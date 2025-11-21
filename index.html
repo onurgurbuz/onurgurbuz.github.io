@@ -1,14 +1,66 @@
 ---
 layout: default
-title: Blog
+title: Ana Sayfa
 ---
 
+<style>
+  #home {
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+  .profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+  }
+  #home h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .lead {
+    font-size: 1.25rem;
+    color: #555;
+    margin-bottom: 2rem;
+  }
+  .social-links a {
+    font-size: 1.5rem;
+    margin: 0 0.5rem;
+    color: #333;
+  }
+  .projects {
+    margin-top: 3rem;
+  }
+  .projects h2 {
+    margin-bottom: 1.5rem;
+  }
+  .project {
+    margin-bottom: 1.5rem;
+  }
+</style>
+
 <div id="home">
-  <!-- <h2><i class="fa fa-bookmark"></i> Yazılar</h2>
-  <ul id="blog-posts" class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }} &raquo;</span><a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
-  <hr> -->
+  <img src="https://media.licdn.com/dms/image/D4D03AQH4Fp3h-O9b2A/profile-displayphoto-shrink_400_400/0/1710423998069?e=1737504000&v=beta&t=o_2Yw-h5a5aZz5a5a5a5a5a5a5a5a5a5a5a" alt="Onur Gürbüz Profil Fotoğrafı" class="profile-image">
+  <h1>Onur Gürbüz</h1>
+  <p class="lead">iOS Developer</p>
+  <div class="social-links">
+    <a href="https://www.linkedin.com/in/onurgurbuz/" target="_blank" title="LinkedIn"><i class="fa fa-linkedin"></i></a>
+    <a href="https://github.com/onurgurbuz" target="_blank" title="GitHub"><i class="fa fa-github"></i></a>
+  </div>
+  <hr>
+
+  <div class="projects">
+    <h2><i class="fa fa-rocket"></i> Uygulamalarım</h2>
+    <div class="project">
+      <h3>Şiveli Anlat</h3>
+      <p>Klasik tabu oyununu Türkiye'nin dört bir yanından eğlenceli şivelerle birleştiren bir parti oyunu.</p>
+      <a href="https://apps.apple.com/us/app/%C5%9Fiveli-anlat/id6754396740" target="_blank" class="btn">App Store'da Görüntüle</a>
+    </div>
+    <div class="project">
+      <h3>Prospektüs Asistanı</h3>
+      <p>İlaç kutusunun fotoğrafını çekerek veya adını yazarak ilaç prospektüslerine saniyeler içinde ulaşmanızı sağlayan bir uygulama.</p>
+      <a href="https://apps.apple.com/us/app/prospekt%C3%BCs-asistan%C4%B1/id6753218069" target="_blank" class="btn">App Store'da Görüntüle</a>
+    </div>
+  </div>
 </div>
