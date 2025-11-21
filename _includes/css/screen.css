@@ -157,11 +157,10 @@ nav h1, nav h2 {
 }
 
 .content {
-  font: 400 16px/22px "open sans", sans-serif;
-  border-left: 1px solid #DDD;
-  padding-left: 40px;
+  font: 400 16px/22px "open sans", sans-serif; /* Bu kural zaten all.css içinde daha spesifik olarak ele alınıyor */
   padding-top: 25px;
   min-height: 400px;
+  /* border-left ve padding-left kuralları all.css'te yönetildiği için buradan kaldırıldı. */
 }
 
 .footer {
@@ -170,7 +169,6 @@ nav h1, nav h2 {
 
 .footer {
   font-size: 80%;
-  color: #666;
   border-top: 4px solid #EEE;
   overflow: hidden;
 }
@@ -215,14 +213,6 @@ nav h1, nav h2 {
 #stalker a:hover {
   text-decoration: none;
   color: {{ site.data.theme.highlight_color }};
-}
-
-i.fa-hn {
-  font-family: "open sans", sans-serif;
-  text-align: center;
-  font-size: 18px !important;
-  position: relative;
-  color: white;
 }
 
 .home {

@@ -15,17 +15,6 @@ title: Ana Sayfa
     padding: 3rem 1rem;
   }
 
-  /* Profil Fotoğrafı */
-  .profile-image {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 1rem;
-    border: 4px solid #fff;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  }
-
   /* Başlık ve Unvan */
   #home h1 {
     font-size: 2.8rem;
@@ -70,13 +59,14 @@ title: Ana Sayfa
     gap: 2rem;
     text-align: left;
   }
-
   /* Proje Kartları */
   .project {
     background: #fff;
     padding: 2rem;
     border-radius: 12px;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
   .project:hover {
@@ -84,8 +74,13 @@ title: Ana Sayfa
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
   }
 
+  .project-content {
+    flex-grow: 1;
+  }
+
   .project h3 {
     color: #3498db;
+    margin-bottom: 1rem;
     margin-top: 0;
   }
 
@@ -94,7 +89,7 @@ title: Ana Sayfa
     display: inline-block;
     background-color: #3498db;
     color: #fff;
-    padding: 10px 20px;
+    padding: 12px 22px;
     border-radius: 5px;
     text-decoration: none;
     font-weight: 600;
@@ -103,11 +98,15 @@ title: Ana Sayfa
   .btn:hover {
     background-color: #2980b9;
   }
+
+  a.btn, a.btn:visited {
+    color: #fff !important;
+  }
 </style>
 
 <div id="home">
   <h1>Onur Gürbüz</h1>
-  <p class="lead">Senior iOS Developer</p>
+  <p class="lead">iOS Developer</p>
   <div class="social-links">
     <a href="https://www.linkedin.com/in/onurgurbuz/" target="_blank" title="LinkedIn"><i class="fa fa-linkedin"></i></a>
     <a href="https://github.com/onurgurbuz" target="_blank" title="GitHub"><i class="fa fa-github"></i></a>
@@ -118,13 +117,17 @@ title: Ana Sayfa
     <h2><i class="fa fa-rocket"></i> Uygulamalarım</h2>
     <div class="project-grid">
       <div class="project">
-        <h3>Şiveli Anlat</h3>
-        <p>Klasik tabu oyununu Türkiye'nin dört bir yanından eğlenceli şivelerle birleştiren bir parti oyunu.</p>
-        <a href="https://apps.apple.com/us/app/%C5%9Fiveli-anlat/id6754396740" target="_blank" class="btn">App Store'da Görüntüle</a>
+        <div class="project-content">
+          <h3>Şiveli Anlat</h3>
+          <p>Klasik tabu oyununu Türkiye'nin dört bir yanından eğlenceli şivelerle birleştiren bir parti oyunu.</p>
+        </div>
+        <a href="https://apps.apple.com/us/app/%C5%9Fiveli-tabu/id6475439674" target="_blank" class="btn">App Store'da Görüntüle</a>
       </div>
       <div class="project">
-        <h3>Prospektüs Asistanı</h3>
-        <p>İlaç kutusunun fotoğrafını çekerek veya adını yazarak ilaç prospektüslerine saniyeler içinde ulaşmanızı sağlayan bir uygulama.</p>
+        <div class="project-content">
+          <h3>Prospektüs Asistanı</h3>
+          <p>İlaç kutusunun fotoğrafını çekerek veya adını yazarak ilaç prospektüslerine saniyeler içinde ulaşmanızı sağlayan bir uygulama.</p>
+        </div>
         <a href="https://apps.apple.com/us/app/prospekt%C3%BCs-asistan%C4%B1/id6753218069" target="_blank" class="btn">App Store'da Görüntüle</a>
       </div>
     </div>
